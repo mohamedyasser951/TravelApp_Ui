@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:travelapp/widgets/HomeAppBar.dart';
+import 'package:travelapp/widgets/HomeNavBar.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -157,6 +158,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: HomeNavBar(),
     );
   }
 }
