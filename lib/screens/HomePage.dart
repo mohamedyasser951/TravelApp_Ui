@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:travelapp/screens/PostScreen.dart';
 import 'package:travelapp/widgets/HomeAppBar.dart';
 import 'package:travelapp/widgets/HomeNavBar.dart';
 
@@ -116,7 +117,13 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     children: [
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>const PostScreen(),
+                              ));
+                        },
                         child: Container(
                           height: 200.0,
                           decoration: BoxDecoration(
@@ -139,15 +146,27 @@ class HomePage extends StatelessWidget {
                               style: TextStyle(
                                   fontSize: 20.0, fontWeight: FontWeight.w600),
                             ),
-                            Icon(Icons.more_vert,size: 30.0,)
+                            Icon(
+                              Icons.more_vert,
+                              size: 30.0,
+                            )
                           ],
                         ),
-                      )
-                      ,const SizedBox(height: 5,),
+                      ),
+                      const SizedBox(
+                        height: 5,
+                      ),
                       Row(
-                        children: const[
-                          Icon(Icons.star,color: Colors.amber,size: 20.0,),
-                          Text("4.5",style: TextStyle(fontWeight: FontWeight.w500),)
+                        children: const [
+                          Icon(
+                            Icons.star,
+                            color: Colors.amber,
+                            size: 20.0,
+                          ),
+                          Text(
+                            "4.5",
+                            style: TextStyle(fontWeight: FontWeight.w500),
+                          )
                         ],
                       )
                     ],
