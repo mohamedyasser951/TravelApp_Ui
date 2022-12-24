@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:travelapp/screens/PostScreen.dart';
 import 'package:travelapp/widgets/HomeAppBar.dart';
 import 'package:travelapp/widgets/HomeNavBar.dart';
@@ -20,8 +19,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const PreferredSize(
-          child: HomeAppBar(), preferredSize: Size.fromHeight(90.0)),
+      appBar:  const PreferredSize(
+          preferredSize: Size.fromHeight(90.0),
+          child: HomeAppBar()),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -177,7 +177,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: HomeNavBar(),
+      bottomNavigationBar: const HomeNavBar(),
     );
   }
 }
