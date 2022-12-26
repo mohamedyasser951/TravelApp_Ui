@@ -7,6 +7,9 @@ import 'package:travelapp/widgets/HomeNavBar.dart';
 class HomePage extends StatelessWidget {
   HomePage({super.key});
 
+
+
+
   List category = [
     "Best Places",
     "Most Visited",
