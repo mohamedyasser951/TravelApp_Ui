@@ -45,9 +45,9 @@ class PostNavBar extends StatelessWidget {
                           ],
                         ),
                       ]),
-                  const SizedBox(height: 25.0),
+                  const SizedBox(height: 15.0),
                   const Text(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s simply dummy text of the printing and typesetting industry",
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text ever since the 1500s simply dummy text of the printing and typesetting industry",
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 16,
@@ -60,27 +60,31 @@ class PostNavBar extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding:const EdgeInsets.only(right: 5),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(15.0),
-                          child: Image.asset(
-                            "assets/city1.jpg",
-                            width: 120,
-                            height: 90,
-                            fit: BoxFit.cover,
+                      Expanded(
+                        child: Padding(
+                          padding:const EdgeInsets.only(right: 5),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15.0),
+                            child: Image.asset(
+                              "assets/city1.jpg",
+                              width: 120,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 5),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(15.0),
-                          child: Image.asset(
-                            "assets/city5.jpg",
-                            width: 120,
-                            height: 90,
-                            fit: BoxFit.cover,
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 5),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15.0),
+                            child: Image.asset(
+                              "assets/city5.jpg",
+                              width: 120,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
@@ -131,7 +135,7 @@ class PostNavBar extends StatelessWidget {
                               ]),
                           child: const Icon(
                             Icons.bookmark_outline,
-                            size: 40.0,
+                            size: 38.0,
                           ),
                         ),
                         SizedBox(
@@ -155,7 +159,7 @@ class PostNavBar extends StatelessWidget {
                                   "Book Now",
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 26,
+                                      fontSize: 24,
                                       fontWeight: FontWeight.w500),
                                 ),
                               ),

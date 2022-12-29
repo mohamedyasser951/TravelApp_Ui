@@ -24,12 +24,12 @@ class PostAppBar extends StatelessWidget {
                   BoxShadow(color: Colors.black26,blurRadius: 6.0)
                 ]
               ),
-              child: const Icon(Icons.arrow_back,size: 28,),
+              child: const Icon(Icons.arrow_back,size: 26,),
             ),
           ),
            InkWell(
             onTap: () {
-              Navigator.of(context).pop();
+              
             },
             child: Container(
               padding:const EdgeInsets.all(10.0),
@@ -40,7 +40,7 @@ class PostAppBar extends StatelessWidget {
                   BoxShadow(color: Colors.black26,blurRadius: 6.0)
                 ]
               ),
-              child: const Icon(Icons.favorite,size: 28,color: Colors.redAccent,),
+              child: const Icon(Icons.favorite,size: 26,color: Colors.redAccent,),
             ),
           )
         ],

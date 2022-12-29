@@ -116,15 +116,16 @@ class HomePage extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: const EdgeInsets.all(15),
+                  padding: const EdgeInsets.symmetric(horizontal: 15.0,vertical: 10.0),
                   child: Column(
+                   
                     children: [
                       InkWell(
                         onTap: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) =>const PostScreen(),
+                                builder: (context) => PostScreen(index: index),
                               ));
                         },
                         child: Container(
@@ -147,11 +148,11 @@ class HomePage extends StatelessWidget {
                             Text(
                               "City Name",
                               style: TextStyle(
-                                  fontSize: 20.0, fontWeight: FontWeight.w600),
+                                  fontSize: 18.0, fontWeight: FontWeight.w600),
                             ),
                             Icon(
                               Icons.more_vert,
-                              size: 30.0,
+                              size: 24.0,
                             )
                           ],
                         ),

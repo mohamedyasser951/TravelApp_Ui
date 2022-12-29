@@ -11,11 +11,11 @@ class HomeNavBar extends StatelessWidget {
       backgroundColor: Colors.transparent,
       index: 2,
       items: const[
-        Icon(Icons.person_outline,size: 30.0,),
-        Icon(Icons.favorite_outline_outlined,size: 30.0,),
-        Icon(Icons.home,size: 30.0,color: Colors.redAccent,),
-        Icon(Icons.location_on_outlined,size: 30.0,),
-        Icon(Icons.list,size: 30.0,),
+        Icon(Icons.person_outline,size: 28.0,),
+        Icon(Icons.favorite_outline_outlined,size: 28.0,),
+        Icon(Icons.home,size: 28.0,color: Colors.redAccent,),
+        Icon(Icons.location_on_outlined,size: 28.0,),
+        Icon(Icons.list,size: 28.0,),
       ],
     );
   }
